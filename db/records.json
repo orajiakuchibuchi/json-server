@@ -365,23 +365,6 @@
       "userID": 4,
       "authToken": "Auth-1685328682422-temp-session",
       "id": 17
-    },
-    {
-      "firstName": "Chibuchi",
-      "lastName": "Orajiaku",
-      "country": "UK",
-      "phone": "09130202",
-      "email": "somtobuchi@gmail.com",
-      "password": "Somtobuchi1991!",
-      "created_at": "2023-05-24T02:42:56.464Z",
-      "updated_at": "2023-05-24T02:42:56.464Z",
-      "role": [
-        "Admin"
-      ],
-      "status": "Active",
-      "userID": 1,
-      "authToken": "Auth-1685344554699-temp-session",
-      "id": 18
     }
   ],
   "bookings": [
