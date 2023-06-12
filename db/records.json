@@ -1,4 +1,41 @@
 {
+  "roles": [
+    {
+      "name": "Master",
+      "status": "Active",
+      "created_at": "2023-06-09T22:40:10.840Z",
+      "updated_at": "2023-06-09T22:40:10.840Z",
+      "id": 1
+    },
+    {
+      "name": "Admin",
+      "status": "Active",
+      "created_at": "2023-06-10T08:03:58.905Z",
+      "updated_at": "2023-06-10T08:03:58.905Z",
+      "id": 2
+    },
+    {
+      "name": "Cleaner",
+      "status": "Active",
+      "created_at": "2023-06-10T08:03:58.905Z",
+      "updated_at": "2023-06-10T08:03:58.905Z",
+      "id": 3
+    },
+    {
+      "name": "Customer",
+      "status": "Active",
+      "created_at": "2023-06-10T08:03:58.905Z",
+      "updated_at": "2023-06-10T08:03:58.905Z",
+      "id": 4
+    },
+    {
+      "name": "Support",
+      "status": "Active",
+      "created_at": "2023-06-10T08:03:58.905Z",
+      "updated_at": "2023-06-10T08:03:58.905Z",
+      "id": 5
+    }
+  ],
   "users": [
     {
       "firstName": "Chibuchi",
@@ -10,7 +47,7 @@
       "created_at": "2023-05-24T02:42:56.464Z",
       "updated_at": "2023-05-24T02:42:56.464Z",
       "role": [
-        "Admin"
+        "Master"
       ],
       "status": "Active",
       "id": 1
@@ -40,7 +77,7 @@
       "created_at": "2023-05-26T00:51:51.340Z",
       "updated_at": "2023-05-26T00:51:51.340Z",
       "role": [
-        "Customer"
+        "Admin"
       ],
       "status": "Active",
       "id": 3
@@ -74,6 +111,36 @@
       ],
       "status": "Active",
       "id": 5
+    },
+    {
+      "firstName": "nicole",
+      "lastName": "oro",
+      "country": "nigeria",
+      "phone": "08064675110",
+      "email": "nicoleoro88@gmail.com",
+      "password": "Iampeaches18!",
+      "created_at": "2023-06-02T15:05:33.768Z",
+      "updated_at": "2023-06-02T15:05:33.768Z",
+      "role": [
+        "Customer"
+      ],
+      "status": "Active",
+      "id": 6
+    },
+    {
+      "firstName": "Chibuike",
+      "lastName": "Nweke",
+      "country": "UK",
+      "phone": "4423220434",
+      "email": "chibuike@gmail.com",
+      "password": "password",
+      "created_at": "2023-06-06T01:15:17.049Z",
+      "updated_at": "2023-06-06T01:15:17.049Z",
+      "role": [
+        "Customer"
+      ],
+      "status": "Active",
+      "id": 7
     }
   ],
   "auth": [
@@ -87,7 +154,7 @@
       "created_at": "2023-05-24T02:42:56.464Z",
       "updated_at": "2023-05-24T02:42:56.464Z",
       "role": [
-        "Admin"
+        "Master"
       ],
       "status": "Active",
       "userID": 1,
@@ -99,7 +166,7 @@
       "lastName": "Orajiaku",
       "country": "UK",
       "phone": "09130202",
-      "email": "somtobuchi@gmail.com",
+      "email": "somtobuchi@gmaiasl.com",
       "password": "Somtobuchi1991!",
       "created_at": "2023-05-24T02:42:56.464Z",
       "updated_at": "2023-05-24T02:42:56.464Z",
@@ -116,8 +183,8 @@
       "lastName": "Orajiaku",
       "country": "UK",
       "phone": "09130202",
-      "email": "somtobuchi@gmail.com",
-      "password": "Somtobuchi1991!",
+      "email": "somtobuchi@gmaiasl.com",
+      "password": "Somtobuchi1991as!",
       "created_at": "2023-05-24T02:42:56.464Z",
       "updated_at": "2023-05-24T02:42:56.464Z",
       "role": [
@@ -150,7 +217,7 @@
       "lastName": "Orajiaku",
       "country": "UK",
       "phone": "09130202",
-      "email": "somtobuchi@gmail.com",
+      "email": "somtobuchi@gsasmail.com",
       "password": "Somtobuchi1991!",
       "created_at": "2023-05-24T02:42:56.464Z",
       "updated_at": "2023-05-24T02:42:56.464Z",
@@ -167,7 +234,7 @@
       "lastName": "Orajiaku",
       "country": "UK",
       "phone": "09130202",
-      "email": "somtobuchi@gmail.com",
+      "email": "somtobuchi@gmasasasail.com",
       "password": "Somtobuchi1991!",
       "created_at": "2023-05-24T02:42:56.464Z",
       "updated_at": "2023-05-24T02:42:56.464Z",
@@ -365,161 +432,60 @@
       "userID": 4,
       "authToken": "Auth-1685328682422-temp-session",
       "id": 17
+    },
+    {
+      "firstName": "nicole",
+      "lastName": "oro",
+      "country": "nigeria",
+      "phone": "08064675110",
+      "email": "nicoleoro88@gmail.com",
+      "password": "Iampeaches18!",
+      "created_at": "2023-06-02T15:05:33.768Z",
+      "updated_at": "2023-06-02T15:05:33.768Z",
+      "role": [
+        "Customer"
+      ],
+      "status": "Active",
+      "userID": 6,
+      "authToken": "Auth-1685718360285-temp-session",
+      "id": 18
+    },
+    {
+      "firstName": "Okpe",
+      "lastName": "Sean",
+      "country": "UK",
+      "phone": "4424848822",
+      "email": "okpesean@gmail.com",
+      "password": "123456789",
+      "created_at": "2023-05-26T00:51:51.340Z",
+      "updated_at": "2023-05-26T00:51:51.340Z",
+      "role": [
+        "Admin"
+      ],
+      "status": "Active",
+      "userID": 3,
+      "authToken": "Auth-1686570866920-temp-session",
+      "id": 19
+    },
+    {
+      "firstName": "Nicole",
+      "lastName": "Oro",
+      "country": "UK",
+      "phone": "4456272829",
+      "email": "nicoleoro@gmail.com",
+      "password": "password",
+      "created_at": "2023-05-26T20:59:32.329Z",
+      "updated_at": "2023-05-26T20:59:32.329Z",
+      "role": [
+        "Customer"
+      ],
+      "status": "Active",
+      "userID": 4,
+      "authToken": "Auth-1686578957553-temp-session",
+      "id": 20
     }
   ],
   "bookings": [
-    {
-      "postal": "100001",
-      "start": "2023-05-24T17:42",
-      "end": "2023-05-24T21:42",
-      "name": "Rd 201, D Close, Festac Town,Lagos, Nigeria",
-      "description": "dadadaadasdasds",
-      "frequency": "Fortnightly",
-      "extra_service": "",
-      "color": "fc-bg-default",
-      "icon": "circle",
-      "cleaner": "2",
-      "country": "Nigeria",
-      "pricing": "0",
-      "payment": {
-        "status": "successful",
-        "customer": {
-          "name": "Chibuchi ",
-          "email": "somtobuchi@gmail.com"
-        },
-        "transaction_id": 4347890,
-        "tx_ref": "1684939335568",
-        "flw_ref": "FLW-MOCK-d8bfa11ae7d6792434f851bb8d3d4166",
-        "currency": "GBP",
-        "amount": 10,
-        "charged_amount": 10,
-        "charge_response_code": "00",
-        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
-        "created_at": "2023-05-24T14:43:17.000Z"
-      },
-      "status": "successful",
-      "created_at": "2023-05-24T14:42",
-      "updated_at": "2023-05-24T14:42",
-      "title": "Nigeria 100001 Between undefined to 2023-05-24T21:42",
-      "date": "2023-05-24T17:42",
-      "user": {
-        "firstName": "Chibuchi",
-        "lastName": "Orajiaku",
-        "country": "UK",
-        "phone": "09130202",
-        "email": "somtobuchi@gmail.com",
-        "password": "Somtobuchi1991!",
-        "created_at": "2023-05-24T02:42:56.464Z",
-        "updated_at": "2023-05-24T02:42:56.464Z",
-        "role": [
-          "Customer"
-        ],
-        "status": "Active",
-        "authToken": "Auth-1684899029756-temp-session",
-        "id": 4
-      },
-      "id": 1
-    },
-    {
-      "postal": "100001",
-      "start": "2023-05-24T18:18",
-      "end": "2023-05-24T20:20",
-      "name": "Rd 201, D Close, Festac Town,Lagos, Nigeria",
-      "description": "sdfsfsdfffsfsdsdffsdsdsdfsddfds",
-      "frequency": "Fortnightly",
-      "extra_service": "Oven cleaning",
-      "color": "fc-bg-default",
-      "icon": "circle",
-      "cleaner": "2",
-      "country": "Nigeria",
-      "pricing": "0",
-      "payment": {
-        "status": "successful",
-        "customer": {
-          "name": "Chibuchi ",
-          "email": "somtobuchi@gmail.com"
-        },
-        "transaction_id": 4347956,
-        "tx_ref": "1684941381335",
-        "flw_ref": "FLW-MOCK-fc3c6f65fc730f873d127b476b46209e",
-        "currency": "GBP",
-        "amount": 10,
-        "charged_amount": 10,
-        "charge_response_code": "00",
-        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
-        "created_at": "2023-05-24T15:18:32.000Z"
-      },
-      "status": "successful",
-      "created_at": "2023-05-24T15:16",
-      "updated_at": "2023-05-24T15:16",
-      "user": {
-        "firstName": "Chibuchi",
-        "lastName": "Orajiaku",
-        "country": "UK",
-        "phone": "09130202",
-        "email": "somtobuchi@gmail.com",
-        "password": "Somtobuchi1991!",
-        "created_at": "2023-05-24T02:42:56.464Z",
-        "updated_at": "2023-05-24T02:42:56.464Z",
-        "role": [
-          "Customer"
-        ],
-        "status": "Active",
-        "authToken": "Auth-1684899029756-temp-session",
-        "id": 1
-      },
-      "id": 2
-    },
-    {
-      "postal": "100001",
-      "start": "2023-05-24T19:02",
-      "end": "2023-05-24T18:02",
-      "name": "Rd 201, D Close, Festac Town,Lagos, Nigeria",
-      "description": "asasdasdasdasdassdadasdasasasdasasdasasdassadasas",
-      "frequency": "Weekly",
-      "extra_service": "Ironing",
-      "color": "fc-bg-default",
-      "icon": "circle",
-      "cleaner": "2",
-      "country": "Nigeria",
-      "pricing": "0",
-      "payment": {
-        "status": "successful",
-        "customer": {
-          "name": "Chibuchi ",
-          "email": "somtobuchi@gmail.com"
-        },
-        "transaction_id": 4348036,
-        "tx_ref": "1684944115392",
-        "flw_ref": "FLW-MOCK-446263c1191b9d141947624eaac69b06",
-        "currency": "GBP",
-        "amount": 10,
-        "charged_amount": 10,
-        "charge_response_code": "00",
-        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
-        "created_at": "2023-05-24T16:03:21.000Z"
-      },
-      "status": "successful",
-      "created_at": "2023-05-24T16:01",
-      "updated_at": "2023-05-24T16:01",
-      "user": {
-        "firstName": "Chibuchi",
-        "lastName": "Orajiaku",
-        "country": "UK",
-        "phone": "09130202",
-        "email": "somtobuchi@gmail.com",
-        "password": "Somtobuchi1991!",
-        "created_at": "2023-05-24T02:42:56.464Z",
-        "updated_at": "2023-05-24T02:42:56.464Z",
-        "role": [
-          "Customer"
-        ],
-        "status": "Active",
-        "authToken": "Auth-1684899029756-temp-session",
-        "id": 4
-      },
-      "id": 3
-    },
     {
       "postal": "100001",
       "start": "2023-05-26T20:23",
@@ -823,6 +789,108 @@
         "id": 12
       },
       "id": 9
+    },
+    {
+      "postal": "100001",
+      "start": "2023-06-07T07:15",
+      "end": "2023-06-10T08:13",
+      "name": "G close, Festac Town, Lagos",
+      "description": "Total of 12 rooms",
+      "frequency": "Weekly",
+      "extra_service": "Ironing",
+      "color": "fc-bg-default",
+      "icon": "circle",
+      "cleaner": "2",
+      "country": "USA",
+      "pricing": "1",
+      "payment": {
+        "status": "successful",
+        "customer": {
+          "name": "Chibuike ",
+          "email": "chibuike@gmail.com"
+        },
+        "transaction_id": 4372367,
+        "tx_ref": "1686028289537",
+        "flw_ref": "FLW-MOCK-39fa99f01b4bf70d2450022f271f8ea4",
+        "currency": "GBP",
+        "amount": 10,
+        "charged_amount": 10,
+        "charge_response_code": "00",
+        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
+        "created_at": "2023-06-06T05:13:03.000Z"
+      },
+      "status": "successful",
+      "created_at": "2023-06-06T05:11",
+      "updated_at": "2023-06-06T05:11",
+      "user": {
+        "firstName": "Chibuike",
+        "lastName": "Nweke",
+        "country": "UK",
+        "phone": "4423220434",
+        "email": "chibuike@gmail.com",
+        "password": "password",
+        "created_at": "2023-06-06T01:15:17.049Z",
+        "updated_at": "2023-06-06T01:15:17.049Z",
+        "role": [
+          "Customer"
+        ],
+        "status": "Active",
+        "userID": 7,
+        "authToken": "Auth-1686015354022-temp-session",
+        "id": 19
+      },
+      "id": 10
+    },
+    {
+      "postal": "100001",
+      "start": "2023-06-15T07:30",
+      "end": "2023-06-15T22:40",
+      "name": "G close, Festac Town, Lagos",
+      "description": "15 bed rooms and 10 kitchens to clean at aksdkdksdskdsds msdffds",
+      "frequency": "Weekly",
+      "extra_service": "",
+      "color": "fc-bg-default",
+      "icon": "circle",
+      "cleaner": "2",
+      "country": "UK",
+      "pricing": "1",
+      "payment": {
+        "status": "successful",
+        "customer": {
+          "name": "Chibuike ",
+          "email": "chibuike@gmail.com"
+        },
+        "transaction_id": 4376217,
+        "tx_ref": "1686155315731",
+        "flw_ref": "FLW-MOCK-04ac095fad76c125a6bafb2792a6a8ac",
+        "currency": "GBP",
+        "amount": 10,
+        "charged_amount": 10,
+        "charge_response_code": "00",
+        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
+        "created_at": "2023-06-07T16:31:32.000Z"
+      },
+      "status": "successful",
+      "created_at": "2023-06-07T16:28",
+      "updated_at": "2023-06-07T16:28",
+      "user": {
+        "firstName": "Chibuike",
+        "lastName": "Nweke",
+        "country": "UK",
+        "phone": "4423220434",
+        "email": "chibuike@gmail.com",
+        "password": "password",
+        "created_at": "2023-06-06T01:15:17.049Z",
+        "updated_at": "2023-06-06T01:15:17.049Z",
+        "role": [
+          "Customer"
+        ],
+        "status": "Active",
+        "userID": 7,
+        "authToken": "Auth-1686015354022-temp-session",
+        "id": 19
+      },
+      "id": 11
     }
   ],
   "plans": [
@@ -884,6 +952,159 @@
       "created_at": "2023-05-29T07:15:54.758Z",
       "updated_at": "2023-05-29T07:15:54.758Z",
       "id": 1
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/2/2023, 4:06:00 PM",
+      "status": "unseen",
+      "userID": 18,
+      "created_at": "2023-06-02T15:06:00.594Z",
+      "updated_at": "2023-06-02T15:06:00.594Z",
+      "id": 2
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/5/2023, 5:19:01 PM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-05T16:19:01.591Z",
+      "updated_at": "2023-06-05T16:19:01.591Z",
+      "id": 3
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/6/2023, 2:15:33 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-06T01:15:33.470Z",
+      "updated_at": "2023-06-06T01:15:33.470Z",
+      "id": 4
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/6/2023, 2:17:13 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-06T01:17:13.994Z",
+      "updated_at": "2023-06-06T01:17:13.994Z",
+      "id": 5
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/6/2023, 2:23:14 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-06T01:23:14.571Z",
+      "updated_at": "2023-06-06T01:23:14.571Z",
+      "id": 6
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/6/2023, 2:27:38 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-06T01:27:38.761Z",
+      "updated_at": "2023-06-06T01:27:38.761Z",
+      "id": 7
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/6/2023, 2:28:42 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-06T01:28:42.674Z",
+      "updated_at": "2023-06-06T01:28:42.674Z",
+      "id": 8
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/6/2023, 2:35:54 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-06T01:35:54.067Z",
+      "updated_at": "2023-06-06T01:35:54.068Z",
+      "id": 9
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/7/2023, 10:13:28 PM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-07T21:13:28.875Z",
+      "updated_at": "2023-06-07T21:13:28.875Z",
+      "id": 10
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/7/2023, 10:29:22 PM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-07T21:29:22.958Z",
+      "updated_at": "2023-06-07T21:29:22.958Z",
+      "id": 11
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/9/2023, 6:29:44 PM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-09T17:29:44.585Z",
+      "updated_at": "2023-06-09T17:29:44.585Z",
+      "id": 12
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/12/2023, 11:21:51 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-12T10:21:51.423Z",
+      "updated_at": "2023-06-12T10:21:51.423Z",
+      "id": 13
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/12/2023, 11:25:34 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-12T10:25:34.896Z",
+      "updated_at": "2023-06-12T10:25:34.896Z",
+      "id": 14
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/12/2023, 11:28:51 AM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-12T10:28:51.061Z",
+      "updated_at": "2023-06-12T10:28:51.061Z",
+      "id": 15
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/12/2023, 12:54:27 PM",
+      "status": "unseen",
+      "userID": 19,
+      "created_at": "2023-06-12T11:54:27.042Z",
+      "updated_at": "2023-06-12T11:54:27.042Z",
+      "id": 16
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/12/2023, 12:54:27 PM",
+      "status": "unseen",
+      "userID": 20,
+      "created_at": "2023-06-12T11:54:27.132Z",
+      "updated_at": "2023-06-12T11:54:27.132Z",
+      "id": 17
+    },
+    {
+      "title": "Login Successful",
+      "message": "You have scuccessfully logged in at 6/12/2023, 3:09:17 PM",
+      "status": "unseen",
+      "userID": 20,
+      "created_at": "2023-06-12T14:09:17.597Z",
+      "updated_at": "2023-06-12T14:09:17.597Z",
+      "id": 18
     }
   ],
   "profile": {
