@@ -173,10 +173,57 @@
       "roles": "everyone",
       "app_id": 2
     },
+    
+    {
+      "id": 10,
+      "name": "Recruitment",
+      "icon": "micon bi bi-door-open-fill",
+      "children": [
+        {
+          "id": 1,
+          "name": "Job Position",
+          "children": [],
+          "link": "admin/recruitment/job-position",
+          "roles": "everyone",
+          "app_id": 1,
+          "icon": ""
+        },
+        {
+          "id": 2,
+          "name": "Job Openings",
+          "children": [],
+          "link": "admin/recruitment/job-opening",
+          "roles": "everyone",
+          "app_id": 1,
+          "icon": ""
+        },
+        {
+          "id": 3,
+          "name": "Ongoing Applications",
+          "children": [],
+          "link": "admin/recruitment/all-users",
+          "roles": "everyone",
+          "app_id": 1,
+          "icon": ""
+        },
+        {
+          "id": 4,
+          "name": "Closed Applications",
+          "children": [],
+          "link": "admin/recruitment/all-users",
+          "roles": "everyone",
+          "app_id": 1,
+          "icon": ""
+        }
+      ],
+      "link": "",
+      "roles": "everyone",
+      "app_id": 1
+    },
     {
       "id": 5,
       "name": "Employees",
-      "icon": "micon bi bi-explicit-fill",
+      "icon": "micon bi bi-person-workspace",
       "children": [
         {
           "id": 2,
@@ -211,11 +258,11 @@
       "app_id": 1
     },
     {
-      "id": 5,
-      "name": "Documents",
+      "id": 9,
+      "name": "File Manager",
       "icon": "micon bi bi-file-earmark-text-fill",
       "children": [],
-      "link": "admin/pricing",
+      "link": "admin/file-manager/home",
       "roles": "everyone",
       "app_id": 1
     },
@@ -225,25 +272,6 @@
       "icon": "micon bi bi-cash-stack",
       "children": [],
       "link": "admin/pricing",
-      "roles": "everyone",
-      "app_id": 1
-    },
-    {
-      "id": 5,
-      "name": "Assets Managenent",
-      "icon": "micon bi bi-building",
-      "children": [
-        {
-          "id": 2,
-          "name": "Records",
-          "children": [],
-          "link": "admin/user-role/all-users",
-          "roles": "everyone",
-          "app_id": 1,
-          "icon": ""
-        }
-      ],
-      "link": "",
       "roles": "everyone",
       "app_id": 1
     },
