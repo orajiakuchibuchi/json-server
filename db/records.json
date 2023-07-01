@@ -43,6 +43,72 @@
       "id": 6
     }
   ],
+  "jobPositions": [
+    {
+      "title": "Junior Developer",
+      "code": "DPM-9430",
+      "department_id": "HR889",
+      "description": "Junior developer desc",
+      "responsibility": "Junior developer responsibility",
+      "created_at": "2023-06-30T22:19:58.015Z",
+      "updated_at": "2023-06-30T22:19:58.015Z",
+      "working_hours": 20,
+      "salary": "",
+      "commission": "",
+      "pay_type": "hourly",
+      "job_type": "Remote",
+      "base_earning": 10,
+      "max_earning": 100,
+      "promotable": false,
+      "required_documents": [
+        "CV"
+      ],
+      "optional_documents": [
+        "Resume"
+      ],
+      "id": 1
+    },
+    {
+      "title": "Saliva",
+      "code": "DPM-6535",
+      "department_id": "HR889",
+      "description": "dfsdffdsffdsfsdfd<br>SDFDFDf<br>SDf",
+      "responsibility": "ddfsdffdsffdsfsdfd<br>SDFDFDf<br>SDfvdfsdffdsffdsfsdfd<br>SDFDFDf<br>SDffsdffdsdfsdffdsffdsfsdfd<br>SDFDFDf<br>SDfffdsfsdfd<br>SDFDFDf<br>SDf",
+      "created_at": "2023-06-30T22:51:39.773Z",
+      "updated_at": "2023-06-30T22:51:39.773Z",
+      "working_hours": 12,
+      "salary": "",
+      "commission": "",
+      "pay_type": "hourly",
+      "job_type": "Remote",
+      "base_earning": 100,
+      "max_earning": 35000,
+      "promotable": false,
+      "required_documents": [
+        "CV",
+        "Resume"
+      ],
+      "optional_documents": [
+        "Cover Letter"
+      ],
+      "id": 2
+    }
+  ],
+  "jobOpenings": [
+    {
+      "title": "Junior developer needed",
+      "code": "JO-272",
+      "info": "Junior dev position is open",
+      "position": "DPM-9430",
+      "deadline": "2023-07-06",
+      "created_at": "Sat Jul 01 2023",
+      "updated_at": "Sat Jul 01 2023",
+      "status": "Open",
+      "public_url": "http://localhost:5001/admin/recruitment/job-opening?code=JO-272",
+      "private_url": "http://localhost:5001/admin/recruitment/job-opening?code=JO-272?url=private",
+      "id": 1
+    }
+  ],
   "companys": [
     {
       "name": "System Tech",
@@ -59,6 +125,17 @@
       "country": "Nigeria",
       "address": "Rd 201, D Close, Festac Town,Lagos, Nigeria",
       "id": 2
+    }
+  ],
+  "departments": [
+    {
+      "name": "HR",
+      "code": "HR889",
+      "created_at": "2023-06-30T13:54:49.747Z",
+      "updated_at": "2023-06-30T13:54:49.747Z",
+      "hod": null,
+      "status": "Active",
+      "id": 1
     }
   ],
   "menus": [
@@ -173,7 +250,6 @@
       "roles": "everyone",
       "app_id": 2
     },
-    
     {
       "id": 10,
       "name": "Recruitment",
