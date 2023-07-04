@@ -98,15 +98,47 @@
     {
       "title": "Junior developer needed",
       "code": "JO-272",
-      "info": "Junior dev position is open",
+      "views": 23,
+      "applications": 0,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo",
       "position": "DPM-9430",
       "deadline": "2023-07-06",
       "created_at": "Sat Jul 01 2023",
       "updated_at": "Sat Jul 01 2023",
       "status": "Open",
-      "public_url": "http://localhost:5001/admin/recruitment/job-opening?code=JO-272",
+      "public_url": "http://localhost:5001/admin/recruitment/job-opening/preview/JO-272",
       "private_url": "http://localhost:5001/admin/recruitment/job-opening?code=JO-272?url=private",
       "id": 1
+    },
+    {
+      "title": "jundsd",
+      "code": "JO-614",
+      "views": 16,
+      "applications": 0,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo",
+      "position": "DPM-9430",
+      "deadline": "2023-07-03",
+      "created_at": "Sun Jul 02 2023",
+      "updated_at": "Sun Jul 02 2023",
+      "status": "Closed",
+      "public_url": "http://localhost:5001/admin/recruitment/job-opening/preview/JO-614",
+      "private_url": "http://localhost:5001/admin/recruitment/job-opening/applications/JO-614",
+      "id": 2
+    },
+    {
+      "title": "Junior dev needed",
+      "code": "JO-114",
+      "views": 0,
+      "applications": 0,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo",
+      "position": "DPM-9430",
+      "deadline": "2023-07-06",
+      "created_at": "Sun Jul 02 2023",
+      "updated_at": "Sun Jul 02 2023",
+      "status": "Open",
+      "public_url": "http://localhost:5001/admin/recruitment/job-opening/preview/JO-114",
+      "private_url": "http://localhost:5001/admin/recruitment/job-opening/applications/JO-114",
+      "id": 3
     }
   ],
   "companys": [
@@ -275,18 +307,9 @@
         },
         {
           "id": 3,
-          "name": "Ongoing Applications",
+          "name": "Job Applications",
           "children": [],
-          "link": "admin/recruitment/all-users",
-          "roles": "everyone",
-          "app_id": 1,
-          "icon": ""
-        },
-        {
-          "id": 4,
-          "name": "Closed Applications",
-          "children": [],
-          "link": "admin/recruitment/all-users",
+          "link": "admin/recruitment/job-opening/applications",
           "roles": "everyone",
           "app_id": 1,
           "icon": ""
