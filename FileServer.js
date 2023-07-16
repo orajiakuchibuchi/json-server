@@ -49,8 +49,75 @@ app.post('/upload', function(req, res) {
     console.log(uploadPath);
     let serverLocation = public + uploadPath ;
     message = 'File uploaded!';
-    res.send({message, serverLocation , dir, uploadPath, fileName, file: uploadPath});
+    res.send({message, serverLocation , dir, uploadPath, fileName, file: uploadPath, created_at: date, updated_at: date});
   });
+});
+
+app.post("/upload-v2", async (req, res) => {
+  let uploadPath;
+  let fileName = "";
+  let message = "";
+  let errors = [];
+  const public = __dirname + "/public";
+  let date = new Date(Date.now());
+  let today =
+    (date.getDay() + 1).toString() +
+    "-" +
+    (date.getMonth() + 1).toString() +
+    "-" +
+    date.getFullYear().toString();
+  const dir = "/v/" + today;
+  const result = [];
+  if (!req.files) {
+    message = "No file was uploaded.";
+    return res.status(400).send(message + JSON.stringify(req.files));
+  }
+  if (!fs.existsSync(public + dir)) {
+    fs.mkdirSync(public + dir);
+  }
+  const paths = Object.entries(req.files).map((file) => {
+    const [key, sampleFile] = file;
+    fileName = Date.now().toString() + "-" + sampleFile.name;
+    const v = "/v/" + today + "/" + key.toLowerCase();
+    if (!fs.existsSync(public + v)) {
+      fs.mkdirSync(public + v);
+    }
+    uploadPath = v + "/" + fileName;
+    return {sampleFile, uploadPath};
+  });
+  console.log(Object.entries(req.files).length);
+  await new Promise ((resolve, reject) => {
+    paths.forEach((v,indx) => {
+      const sampleFile = v.sampleFile;
+      const uploadPath = v.uploadPath;
+      sampleFile.mv(public + uploadPath, function (err) {
+        let serverLocation = public + uploadPath;
+        if (err) {
+          errors.unshift(err);
+        } else {
+          uploadedFiles.unshift(fileName);
+          message = "File uploaded!";
+        }
+        result.unshift({
+          message,
+          serverLocation,
+          dir,
+          uploadPath,
+          fileName,
+          file: uploadPath,
+          errors,
+          created_at: date, updated_at: date
+        });
+        console.log(indx)
+        // console.log(paths)
+        console.log(paths.length)
+        if(indx == paths.length-1){
+          resolve(result);
+        }
+      });
+    });
+  });
+  res.send(result[0]);
 });
 
 app.post('/upload-multi', function(req, res) {
@@ -76,3 +143,11 @@ app.post('/upload-multi', function(req, res) {
 app.listen(JSONPORT, ()=>{
   console.log('JSON upload server is running in port ' + JSONPORT)
 })
+
+
+
+
+
+
+
+
