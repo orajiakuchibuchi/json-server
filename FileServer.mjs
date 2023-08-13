@@ -1,11 +1,14 @@
-const express = require('express');
-const fileUpload = require('express-fileupload');
-const busboy = require('connect-busboy');
+import express from "express";
+import fileUpload from "express-fileupload";
+import busboy from "connect-busboy";
+import authMiddleware from './middleware/auth.mjs';
+import fileDirName from './file-dir-name.mjs';
+const { __dirname } = fileDirName(import.meta);
 
-const fs = require('fs');
+import fs from "fs";
+
 const app = express();
 const JSONPORT = process.env.PORT || 3002;
-const authMiddleware = require('./middleware/auth');
 const uploadedFiles = [];
 // default options
 app.use(fileUpload());
@@ -24,7 +27,7 @@ app.post('/upload', function(req, res) {
   let uploadPath;
   let fileName = '';
   let message = '';
-  const public = __dirname + '/public'
+  const public_dir = __dirname + '/public'
   let date = new Date(Date.now());
   let today = date.getDay().toString() + '-' + date.getMonth().toString() + '-' + date.getFullYear().toString();
   if (!req.files || !req.files.file) {
@@ -34,20 +37,20 @@ app.post('/upload', function(req, res) {
   // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
   sampleFile = req.files.file;
   const dir = '/v/' + today ;
-  if (!fs.existsSync(public + dir)){
-    fs.mkdirSync(public + dir);
+  if (!fs.existsSync(public_dir + dir)){
+    fs.mkdirSync(public_dir + dir);
   }
   fileName = Date.now().toString() + '-' + sampleFile.name ;
   uploadPath = dir +  '/' + fileName;
   // Use the mv() method to place the file somewhere on your server
-  sampleFile.mv(public + uploadPath, function(err) {
+  sampleFile.mv(public_dir + uploadPath, function(err) {
     if (err){
       return res.status(500).send(err);
     }
     uploadedFiles.unshift(fileName);
     console.log(uploadPath);
     console.log(uploadPath);
-    let serverLocation = public + uploadPath ;
+    let serverLocation = public_dir + uploadPath ;
     message = 'File uploaded!';
     res.send({message, serverLocation , dir, uploadPath, fileName, file: uploadPath, created_at: date, updated_at: date});
   });
@@ -58,7 +61,7 @@ app.post("/upload-v2", async (req, res) => {
   let fileName = "";
   let message = "";
   let errors = [];
-  const public = __dirname + "/public";
+  const public_dir = __dirname + "/public";
   let date = new Date(Date.now());
   let today =
     (date.getDay() + 1).toString() +
@@ -72,15 +75,15 @@ app.post("/upload-v2", async (req, res) => {
     message = "No file was uploaded.";
     return res.status(400).send(message + JSON.stringify(req.files));
   }
-  if (!fs.existsSync(public + dir)) {
-    fs.mkdirSync(public + dir);
+  if (!fs.existsSync(public_dir + dir)) {
+    fs.mkdirSync(public_dir + dir);
   }
   const paths = Object.entries(req.files).map((file) => {
     const [key, sampleFile] = file;
     fileName = Date.now().toString() + "-" + sampleFile.name;
     const v = "/v/" + today + "/" + key.toLowerCase();
-    if (!fs.existsSync(public + v)) {
-      fs.mkdirSync(public + v);
+    if (!fs.existsSync(public_dir + v)) {
+      fs.mkdirSync(public_dir + v);
     }
     uploadPath = v + "/" + fileName;
     return {sampleFile, uploadPath};
@@ -90,8 +93,8 @@ app.post("/upload-v2", async (req, res) => {
     paths.forEach((v,indx) => {
       const sampleFile = v.sampleFile;
       const uploadPath = v.uploadPath;
-      sampleFile.mv(public + uploadPath, function (err) {
-        let serverLocation = public + uploadPath;
+      sampleFile.mv(public_dir + uploadPath, function (err) {
+        let serverLocation = public_dir + uploadPath;
         if (err) {
           errors.unshift(err);
         } else {
