@@ -6,16 +6,17 @@ import hbs from "hbs";
 import dotenv from "dotenv";
 import express from "express";
 import JsonServer from 'json-server';
+import cron from 'node-cron';
 // import requestIP from 'request-ip';
 import authMiddleware from './middleware/auth.mjs';
 import fileDirName from './file-dir-name.mjs';
-
+// const cron = require('node-cron');
 dotenv.config();
 
-const DBPATH= '\\db\\records.json';
+const DBPATH= '/db/records.json';
 const { __dirname } = fileDirName(import.meta);
 const DB = __dirname + DBPATH;
-const public_dir = `${__dirname}\\public`;
+const public_dir = `${__dirname}/public`;
 const PORT = process.env.PORT;
 const SERVER_NAME = process.env.SERVER_NAME;
 const SERVER_URL = process.env.SERVER_URL; 
@@ -36,7 +37,7 @@ app.set('port', PORT);
 app.use('views', express.static('public'));
 
 app.get("/", (req, res) => {
-  res.render(`${public_dir}\\index.hbs`, { appID: process.env.PASSAGE_APP_ID });
+  res.render(`${public_dir}/index.hbs`, { appID: process.env.PASSAGE_APP_ID });
 });
 
 
@@ -104,14 +105,27 @@ app.set("view engine", "hbs");
 app.set("view engine", "html");
 app.engine("html", hbs.__express);
 
-
-
 app.listen(PORT, () => {
   console.info(`${SERVER_NAME} App listening on port ${SERVER_URL}`);
 });
 
 
- 
+ // ...
+
+// Schedule tasks to be run on the server.
+cron.schedule('* * * * *', function() {
+  console.log('running a task every minute');
+});
+
+// * * * * * *
+//   | | | | | |
+//   | | | | | day of week
+//   | | | | month
+//   | | | day of month
+//   | | hour
+//   | minute
+//  second ( optional )
+
 function validateEmail(email){
   return String(email)
     .toLowerCase()
