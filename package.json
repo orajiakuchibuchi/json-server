@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.mjs",
     "serve": "json-server ./db/records.json --routes route/api.json",
     "test": "echo \"Error: no sparkling-green-logo-rectangle.PNG test specified\" && exit 1"
   },
